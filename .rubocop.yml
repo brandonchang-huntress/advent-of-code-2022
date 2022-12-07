@@ -1,22 +1,6 @@
 AllCops:
   TargetRubyVersion: 2.7
   NewCops: enable
-  Exclude:
-    - 'Brewfile'
-    - 'bin/**/*'
-    - 'vendor/**/*'
-    - 'tmp/**/*'
-    - 'storage/**/*'
-    - 'spec/support/huntress_extensions/**/*'
-    - db/rio_schema.rb
-    - db/rio_shard1_schema.rb
-    - db/rio_shard2_schema.rb
-    - db/schema.rb
-    - db/timescale_schema.rb
-    - lib/gitlab/database/migration_helpers.rb
-    - Guardfile
-    - node_modules/**/*
-    - scripts/transform_invoices.rb
 
 Layout/BlockAlignment:
   EnforcedStyleAlignWith: either
@@ -27,37 +11,17 @@ Layout/FirstHashElementIndentation:
 Layout/MultilineMethodCallIndentation:
   EnforcedStyle: indented
 
-Metrics/AbcSize:
-  Exclude:
-    - app/models/abilities/user.rb
-
-Metrics/BlockLength:
-  Exclude:
-    - 'config/**/*'
-    - 'lib/tasks/*.rake'
-    - 'spec/**/*'
-
-Metrics/MethodLength:
-  Exclude:
-    - app/models/abilities/user.rb
-
 Style/Documentation:
   Enabled: false
-
-Style/FrozenStringLiteralComment:
-  Exclude:
-    - 'app/views/**/*'
-    - 'db/data_schema.rb'
-
-Style/NumericLiterals:
-  Exclude:
-  - "db/data_schema.rb"
 
 Style/StringLiterals:
   EnforcedStyle: double_quotes
 
 Style/WhileUntilModifier:
   Enabled: false
+
+Metrics/MethodLength:
+  Max: 20
 
 # YOU CAN PRY MY EMOJOIS FROM MY COLD DEAD HANDS
 Style/AsciiComments:
