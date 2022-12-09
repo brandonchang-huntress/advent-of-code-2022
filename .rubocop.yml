@@ -32,3 +32,6 @@ Metrics/BlockLength:
 # YOU CAN PRY MY EMOJOIS FROM MY COLD DEAD HANDS
 Style/AsciiComments:
   Enabled: false
+
+Metrics/AbcSize:
+  Max: 30
