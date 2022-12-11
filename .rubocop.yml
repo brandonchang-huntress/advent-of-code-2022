@@ -35,3 +35,9 @@ Style/AsciiComments:
 
 Metrics/AbcSize:
   Max: 30
+
+Layout/LineLength:
+  Max: 200
+
+Security/Eval:
+  Enabled: false
